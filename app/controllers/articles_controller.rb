@@ -23,9 +23,9 @@ class ArticlesController < ApplicationController
 
 	def update
 		@article = Article.find(params[:id])
-		p  @article.content
-		@article.content << params[:content]
-		puts @article.content
+		# p  @article.content
+		# @article.content << params[:content]
+		# puts @article.content
 		redirect_to '/'
 
 	end

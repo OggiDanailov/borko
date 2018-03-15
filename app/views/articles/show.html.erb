@@ -1,0 +1,10 @@
+<div><h2><%= @article.title%></h2></div>
+<div class='article'><%= @article.content%></div>
+
+
+<h3>Add text to this story</h3>
+
+<%= form_for articles_path(@article), method: :patch do |f| %>
+<%= f.text_area :content %>
+<%= f.submit %>
+<% end %>

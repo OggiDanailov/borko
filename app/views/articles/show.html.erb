@@ -4,7 +4,19 @@
 
 <h3>Add text to this story</h3>
 
-<%= form_for articles_path(@article), method: :patch do |f| %>
-<%= f.text_area :content %>
+
+<%#= form_tag({controller: "articles", action: "update"}, method: "patch") do %>
+    <%#= label_tag(:content, "Add content") %>
+    <%#= text_area_tag(:content) %>
+    <%#= submit_tag("add") %>
+<%# end %>
+
+
+<%= form_for @article, :method => "patch" do |f| %>
+<%= f.text_area :content  %>
+<%= f.hidden_field :content, :method => :patch %>
+
+
+<%#= f.hidden_field :password, :method => :put %>
 <%= f.submit %>
 <% end %>

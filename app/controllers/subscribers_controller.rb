@@ -20,7 +20,7 @@ class SubscribersController < ApplicationController
 		    :description => 'Rails Stripe customer',
 		    :currency    => 'usd'
 		  )
-
+		  redirect_to root_path
 	
 
 	rescue Stripe::CardError => e

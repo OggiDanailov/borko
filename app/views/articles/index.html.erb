@@ -2,8 +2,11 @@
 <div class='articles'>
 	<% @articles.each do |a| %>
 		<div class='articles-list'>
+			
 			<h2><a href="/articles/<%= a.id %>"><%= a.title %></a></h2>
-			<p><%= a.content.first(1000) %></p>
+			
+
+			<p><%= a.content.first(1400) %></p>
 		</div>
 	<% end %>
 </div>

@@ -2,6 +2,6 @@
 <div class='articles'>
 	<% @articles.each do |a| %>
 		<h2><a href="/articles/<%= a.id %>"><%= a.title %></a></h2>
-		<p><%= a.content %></p>
+		<p><%= truncate simple_format(a.content), length: 800 %></p>
 	<% end %>
 </div>

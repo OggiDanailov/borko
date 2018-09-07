@@ -1,5 +1,6 @@
 <div><h2><%= @article.title%></h2></div>
-<div class='article'><%= @article.content%></div>
+
+<div class='article'><%= simple_format(@article.content) %></div>
 
 
 <h3>Add text to this story</h3>

@@ -1,7 +1,14 @@
 
-<div class='articles'>
+<div class='wrapper-index'>
+
 	<% @articles.each do |a| %>
+	<div class='articles'>
 		<h2><a href="/articles/<%= a.id %>"><%= a.title %></a></h2>
-		<p><%= truncate simple_format(a.content), length: 800 %></p>
+		<p><%=   simple_format(a.content.to_s.truncate_words(80)) %></p>
+	</div>
 	<% end %>
+
+
 </div>
+
+

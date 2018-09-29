@@ -44,10 +44,11 @@ $main-border-color: purple;
 .navbar ul {
 	line-height: 50px;
 	/*border: 2px solid;*/
+	position: relative;
 }
 
 .navbar ul li{
-	/*border: 2px solid green;*/
+	border-bottom: 2px solid white;
 	display: inline-block;
 	margin: 10px;
 }
@@ -58,6 +59,35 @@ $main-border-color: purple;
 	font-size: 20px;
 	color: white;
 }
+
+.navbar ul li ul {
+	// border: 2px solid blue;
+	position: absolute;
+	background-color: black;
+	width: 200px;
+	display: none;
+}
+
+.navbar ul li:hover ul {
+	display:block;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar ul li ul li {
+	width: 100%;
+	// border: 1px solid white;
+	// float: left;
+	display: block;
+	margin: 0 auto;
+}
+
+.navbar ul li ul li:hover {
+	background-color: grey;
+}
+
+
+
 
 
 

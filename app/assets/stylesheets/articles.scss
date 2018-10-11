@@ -58,82 +58,82 @@ $main-border-color: red;
 	border: 5px solid lightgrey;
 }
 
-.navbar ul {
-	line-height: 50px;
-	/*border: 2px solid;*/
-	position: relative;
-}
+// .navbar ul {
+// 	line-height: 50px;
+// 	/*border: 2px solid;*/
+// 	position: relative;
+// }
 
-.navbar ul li{
-	border-bottom: 2px solid white;
-	display: inline-block;
-	margin: 10px;
-}
+// .navbar ul li{
+// 	border-bottom: 2px solid white;
+// 	display: inline-block;
+// 	margin: 10px;
+// }
 
-.navbar ul li a {
-	list-style-type: none;
-	text-decoration: none;
-	font-size: 20px;
-	// color: white;
-}
+// .navbar .navbar-brand ul li a {
+// 	list-style-type: none;
+// 	text-decoration: none;
+// 	font-size: 20px;
+// 	// color: white;
+// }
 
-.navbar ul li ul {
-	// border: 2px solid blue;
-	position: absolute;
-	background-color: black;
-	width: 200px;
-	display: none;
-}
+// .navbar ul li ul {
+// 	// border: 2px solid blue;
+// 	position: absolute;
+// 	background-color: black;
+// 	width: 200px;
+// 	display: none;
+// }
 
-.navbar ul li:hover ul {
-	display:block;
-	margin: 0;
-	padding: 0;
-}
+// .navbar ul li:hover ul {
+// 	display:block;
+// 	margin: 0;
+// 	padding: 0;
+// }
 
-.navbar ul li ul li {
-	width: 100%;
-	// border: 1px solid white;
-	// float: left;
-	display: block;
-	margin: 0 auto;
-}
+// .navbar ul li ul li {
+// 	width: 100%;
+// 	// border: 1px solid white;
+// 	// float: left;
+// 	display: block;
+// 	margin: 0 auto;
+// }
 
-.navbar ul li ul li:hover {
-	background-color: grey;
-}
+// .navbar ul li ul li:hover {
+// 	background-color: grey;
+// }
 
 
-@media all and (max-width: 768px){
-	.burger {
-		display: block;
-	}
+// @media all and (max-width: 768px){
+// 	.burger {
+// 		display: block;
+// 	}
 
-	.navbar {
-			display: none;
-			background-color: transparent;
-			border: none;
-		}
+// 	.navbar {
+// 			display: none;
+// 			background-color: transparent;
+// 			border: none;
+// 		}
 
-	.navbar ul {
-		// border: 2px solid blue;
-		width: 20%;
-		padding: 0;
-		margin: 0;
-	}
+// 	.navbar ul {
+// 		// border: 2px solid blue;
+// 		width: 20%;
+// 		padding: 0;
+// 		margin: 0;
+// 	}
 
-	.navbar ul li {
-		margin: 0;
-		padding: 0;
-		display: block;
-		border: 2px solid grey;
-	}
+// 	.navbar ul li {
+// 		margin: 0;
+// 		padding: 0;
+// 		display: block;
+// 		border: 2px solid grey;
+// 	}
 
-	.navbar ul li ul {
-		position:static;
-		display:none;
-	}
-}
+// 	.navbar ul li ul {
+// 		position:static;
+// 		display:none;
+// 	}
+// }
 
 
 

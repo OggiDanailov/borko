@@ -1,14 +1,16 @@
+<div class="page-wrapper">
+	<div class='wrapper-index'>
+		<h2>Articles</h2>
 
-<div class='wrapper-index'>
+		<% @articles.each do |a| %>
+		<div class='articles'>
+			<h2><a href="/articles/<%= a.id %>"><%= a.title %></a></h2>
+			<p><%=   simple_format(a.content.to_s.truncate_words(80)) %></p>
+		</div>
+		<% end %>
 
-	<% @articles.each do |a| %>
-	<div class='articles'>
-		<h2><a href="/articles/<%= a.id %>"><%= a.title %></a></h2>
-		<p><%=   simple_format(a.content.to_s.truncate_words(80)) %></p>
+
 	</div>
-	<% end %>
-
-
 </div>
 
 

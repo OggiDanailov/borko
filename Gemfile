@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.5'
 gem 'jquery-rails'
 gem 'devise'
 gem 'trix'
+gem "bootstrap_form", ">= 4.0.0.alpha1"
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
